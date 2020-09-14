@@ -11,7 +11,7 @@ var updateButton = document.getElementById('update');
 //     ourRequest.send();
 // })
 var ourRequest = new XMLHttpRequest();
-ourRequest.open('GET', 'https://sportsapi.froshtiet.com/api/');
+ourRequest.open('GET', 'https://esportsmania.froshtiet.com/api/');
 ourRequest.onload = function() {
     var ourData = JSON.parse(ourRequest.responseText);
     updateData(ourData);
@@ -21,7 +21,7 @@ ourRequest.onload = function() {
 ourRequest.send();
 setInterval(function() {
     var ourRequest = new XMLHttpRequest();
-    ourRequest.open('GET', 'https://sportsapi.froshtiet.com/api/');
+    ourRequest.open('GET', 'https://esportsmania.froshtiet.com/api/');
     ourRequest.onload = function() {
         var ourData = JSON.parse(ourRequest.responseText);
         updateData(ourData);
