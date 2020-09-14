@@ -35,7 +35,7 @@ function updateData(data) {
     var pools = document.getElementById('pools');
     pools.innerHTML = "";
     var alpha = ['A', 'B', 'C', 'D', 'E', 'F'];
-    var pool = ['Round 1 - Pool A', 'Round 1 - Pool B', 'Round 1 - Pool C', 'Round 1 - Pool D', 'Round 2'];
+    var pool = ['Round 1 - Pool A', 'Round 1 - Pool B', 'Round 1 - Pool C', 'Round 2'];
     for (var i = 0; i < 5; i++) {
         pools.innerHTML += `<h1 style="padding-top:40px">${pool[i]}</h1>
         <div class="tbl-header">
